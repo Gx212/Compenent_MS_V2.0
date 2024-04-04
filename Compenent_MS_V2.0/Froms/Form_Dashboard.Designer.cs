@@ -40,9 +40,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button_search = new System.Windows.Forms.Button();
+            this.button_dashboard = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel_control = new System.Windows.Forms.Panel();
+            this.user_name = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,6 +57,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.user_name);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button2);
@@ -85,7 +89,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2015, 51);
+            this.label2.Location = new System.Drawing.Point(1815, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 34);
             this.label2.TabIndex = 10;
@@ -112,9 +116,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(129, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(598, 42);
+            this.label1.Size = new System.Drawing.Size(418, 42);
             this.label1.TabIndex = 1;
-            this.label1.Text = "智能感知与预警  元器件管理系统";
+            this.label1.Text = "核电子学信息管理系统";
             // 
             // pictureBox1
             // 
@@ -132,7 +136,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button_search);
+            this.panel2.Controls.Add(this.button_dashboard);
             this.panel2.Controls.Add(this.panelSide);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 116);
@@ -172,21 +176,21 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button_search
+            // button_dashboard
             // 
-            this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button_search.FlatAppearance.BorderSize = 0;
-            this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_search.Font = new System.Drawing.Font("华文行楷", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_search.ForeColor = System.Drawing.Color.White;
-            this.button_search.Location = new System.Drawing.Point(15, 50);
-            this.button_search.Margin = new System.Windows.Forms.Padding(0);
-            this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(108, 90);
-            this.button_search.TabIndex = 3;
-            this.button_search.Text = "查询";
-            this.button_search.UseVisualStyleBackColor = false;
-            this.button_search.Click += new System.EventHandler(this.button_search_Click);
+            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.button_dashboard.FlatAppearance.BorderSize = 0;
+            this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dashboard.Font = new System.Drawing.Font("华文行楷", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_dashboard.ForeColor = System.Drawing.Color.White;
+            this.button_dashboard.Location = new System.Drawing.Point(15, 50);
+            this.button_dashboard.Margin = new System.Windows.Forms.Padding(0);
+            this.button_dashboard.Name = "button_dashboard";
+            this.button_dashboard.Size = new System.Drawing.Size(108, 90);
+            this.button_dashboard.TabIndex = 3;
+            this.button_dashboard.Text = "导航";
+            this.button_dashboard.UseVisualStyleBackColor = false;
+            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
             // 
             // panelSide
             // 
@@ -205,6 +209,28 @@
             this.panel_control.Name = "panel_control";
             this.panel_control.Size = new System.Drawing.Size(2277, 1234);
             this.panel_control.TabIndex = 3;
+            // 
+            // user_name
+            // 
+            this.user_name.AutoSize = true;
+            this.user_name.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name.ForeColor = System.Drawing.Color.White;
+            this.user_name.Location = new System.Drawing.Point(2003, 36);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(99, 34);
+            this.user_name.TabIndex = 11;
+            this.user_name.Text = "label3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1815, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 34);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "欢迎你";
             // 
             // Form_Dashboard
             // 
@@ -235,12 +261,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button_search;
+        private System.Windows.Forms.Button button_dashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelSide;
         private System.Windows.Forms.Panel panel_control;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label user_name;
+        private System.Windows.Forms.Label label3;
     }
 }

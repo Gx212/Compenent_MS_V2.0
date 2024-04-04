@@ -150,6 +150,18 @@
     <Compile Include="Uer_Control\count_uc.Designer.cs">
       <DependentUpon>count_uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uer_Control\Dashboard_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uer_Control\Dashboard_uc.Designer.cs">
+      <DependentUpon>Dashboard_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uer_Control\equipment_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uer_Control\equipment_uc.Designer.cs">
+      <DependentUpon>equipment_uc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uer_Control\journal_uc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </Compile>
     <EmbeddedResource Include="Uer_Control\count_uc.resx">
       <DependentUpon>count_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uer_Control\Dashboard_uc.resx">
+      <DependentUpon>Dashboard_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uer_Control\equipment_uc.resx">
+      <DependentUpon>equipment_uc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uer_Control\journal_uc.resx">
       <DependentUpon>journal_uc.cs</DependentUpon>

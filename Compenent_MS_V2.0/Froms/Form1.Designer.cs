@@ -81,9 +81,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(129, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(598, 42);
+            this.label1.Size = new System.Drawing.Size(418, 42);
             this.label1.TabIndex = 1;
-            this.label1.Text = "智能感知与预警  元器件管理系统";
+            this.label1.Text = "核电子学信息管理系统";
             // 
             // pictureBox1
             // 

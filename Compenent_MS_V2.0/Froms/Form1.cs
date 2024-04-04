@@ -13,6 +13,7 @@ namespace Compenent_MS_V2._0
 {
     public partial class Form1 : Form
     {
+        public static string user_Name;
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace Compenent_MS_V2._0
             IDataReader user_data = dao.read(sql);
             if (user_data.Read())
             {
+                user_Name = user_data["user_name"].ToString();
                 using (Form_Dashboard fd = new Form_Dashboard())
                 {
                     this.Hide();

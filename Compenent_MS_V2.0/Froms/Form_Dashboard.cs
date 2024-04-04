@@ -12,21 +12,28 @@ using System.Windows.Forms;
 namespace Compenent_MS_V2._0.Froms
 {
 
+
     public partial class Form_Dashboard : Form
     {
+        public static Form_Dashboard f_dashboard;//定义静态变量
+
         public Form_Dashboard()
         {
             InitializeComponent();
+            f_dashboard = this;//静态变量实例化
+           
         }
 
-        int PanelWith;
-        bool isCollapsed;
+    
         private void Form_Dashboard_Load(object sender, EventArgs e)
         {
             Time_Date.Start();//显示当前时间
+            user_name.Text = Form1.user_Name;
 
-            search_control sea_uc = new search_control();
-            add_Control(sea_uc);//默认显示搜索页面
+            //search_control sea_uc = new search_control();
+            //add_Control(sea_uc);//默认显示搜索页面
+            Dashboard_uc dashboard_uc = new Dashboard_uc();
+            add_Control(dashboard_uc);//默认显示导航页面
 
         }
 
@@ -38,7 +45,7 @@ namespace Compenent_MS_V2._0.Froms
         }
 
 
-        public void add_Control(Control c)//添加pane_uc1界面
+        public void add_Control(Control c)//添加pane_uc界面
         {
             c.Dock = DockStyle.Fill;
             panel_control.Controls.Clear();
@@ -49,7 +56,7 @@ namespace Compenent_MS_V2._0.Froms
         private void Time_Date_Tick(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
-            label2.Text = dateTime.ToString("HH:mm:ss");
+            label2.Text = dateTime.ToString("yyyy/MM/dd HH:mm:ss");
         }
 
         private void button2_Click(object sender, EventArgs e)//返回主界面
@@ -58,34 +65,48 @@ namespace Compenent_MS_V2._0.Froms
         }
 
 
-        private void button4_Click(object sender, EventArgs e)//统计
+        private void button4_Click(object sender, EventArgs e)//统计页面
         {
             moveSidePanel(button4);
             count_uc count_uc = new count_uc();//添加图表
             add_Control(count_uc);
+
         }
 
-        private void button5_Click(object sender, EventArgs e)//日志
+        private void button5_Click(object sender, EventArgs e)//日志页面
         {
             moveSidePanel(button5);
             journal_uc jo_uc = new journal_uc();
             add_Control(jo_uc);
+
+            journal_uc.journal.readLog("导航页面加载完成");
         }
 
-        private void button_search_Click(object sender, EventArgs e)//查询
+        private void button_dashboard_Click(object sender, EventArgs e)//导航页面
         {
-            moveSidePanel(button_search);
-            search_control sea_uc = new search_control();
-            add_Control(sea_uc);//默认显示搜索页面
+            moveSidePanel(button_dashboard);
+            //search_control sea_uc = new search_control();
+            //add_Control(sea_uc);//默认显示搜索页面
+
+            Dashboard_uc dashboard = new Dashboard_uc();
+            add_Control(dashboard);//显示导航界面
         }
 
         private void button6_Click(object sender, EventArgs e)//刷新按钮
         {
-            //search_control serch_cu = new search_control();
-            //serch_cu.table_read();
-            
-            search_control search_uc = new search_control();
-            add_Control(search_uc);
+            moveSidePanel(button_dashboard);
+            Dashboard_uc dashboard_uc = new Dashboard_uc();
+            add_Control(dashboard_uc);
         }
+
+        public void turn_panel(Control c)//构建其他页面调用方法
+        {
+            c.Dock = DockStyle.Fill;
+            f_dashboard.panel_control.Controls.Clear();
+            f_dashboard.panel_control.Controls.Add(c);
+   
+        }
+
+
     }
 }
