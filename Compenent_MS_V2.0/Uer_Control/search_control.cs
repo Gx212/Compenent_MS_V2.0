@@ -211,7 +211,7 @@ namespace Compenent_MS_V2._0.Uer_Control
                     string key = row.Cells[0].Value.ToString();
                     int value = Convert.ToInt32(row.Cells[6].Value);
 
-                    if (dataDictionary.ContainsKey(key))//如果村咋相同类型的键值
+                    if (dataDictionary.ContainsKey(key))//如果存在相同类型的键值
                     {
 
                         dataDictionary[key] = value + dataDictionary[key];//将对应值添加

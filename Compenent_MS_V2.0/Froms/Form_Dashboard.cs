@@ -12,8 +12,6 @@ using System.Windows.Forms;
 namespace Compenent_MS_V2._0.Froms
 {
 
-    //这是推送到github的第四次测试
-
     public partial class Form_Dashboard : Form
     {
         public static Form_Dashboard f_dashboard;//定义静态变量
@@ -31,8 +29,6 @@ namespace Compenent_MS_V2._0.Froms
             Time_Date.Start();//显示当前时间
             user_name.Text = Form1.user_Name;
 
-            //search_control sea_uc = new search_control();
-            //add_Control(sea_uc);//默认显示搜索页面
             Dashboard_uc dashboard_uc = new Dashboard_uc();
             add_Control(dashboard_uc);//默认显示导航页面
 

@@ -31,6 +31,8 @@ namespace Compenent_MS_V2._0
 
         private void button3_Click(object sender, EventArgs e)//注册账号按钮
         {
+            Register_Form register_form = new Register_Form();
+            register_form.ShowDialog();
 
         }
 
