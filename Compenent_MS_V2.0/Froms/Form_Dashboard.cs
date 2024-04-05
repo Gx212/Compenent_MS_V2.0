@@ -78,8 +78,6 @@ namespace Compenent_MS_V2._0.Froms
             moveSidePanel(button5);
             journal_uc jo_uc = new journal_uc();
             add_Control(jo_uc);
-
-            journal_uc.journal.readLog("导航页面加载完成");
         }
 
         private void button_dashboard_Click(object sender, EventArgs e)//导航页面
