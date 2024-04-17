@@ -130,6 +130,12 @@
     <Compile Include="Froms\Form_Dashboard.Designer.cs">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Froms\import_equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\import_equipment.Designer.cs">
+      <DependentUpon>import_equipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Froms\import_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Froms\Form_Dashboard.resx">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\import_equipment.resx">
+      <DependentUpon>import_equipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Froms\import_Form.resx">
       <DependentUpon>import_Form.cs</DependentUpon>
