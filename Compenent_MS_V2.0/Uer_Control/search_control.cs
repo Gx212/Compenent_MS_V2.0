@@ -207,7 +207,7 @@ namespace Compenent_MS_V2._0.Uer_Control
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[0].Value != null && row.Cells[6].Value != null)
-                {      
+                {
                     string key = row.Cells[0].Value.ToString();
                     int value = Convert.ToInt32(row.Cells[6].Value);
 

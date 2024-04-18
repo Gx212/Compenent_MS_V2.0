@@ -93,5 +93,31 @@ namespace Compenent_MS_V2._0.Uer_Control
             label_u4.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             label_u5.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        public Dictionary<string, int> GetEquipmentDate()
+        {
+            Dictionary<string,int> equipment_date = new Dictionary<string,int>();
+            equipment_date.Add("已借用",0);
+            equipment_date.Add("未借用", 0);
+
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[0].Value != null && row.Cells[5].Value != null)
+                {
+                    if (row.Cells[5].Value.ToString() == "已借用")
+                    {
+                        equipment_date["已借用"] += 1;
+                    }
+                    else
+                    {
+                        equipment_date["未借用"] += 1;
+                    }
+                }
+            }
+            return equipment_date;
+        }
     }
+
+
 }
