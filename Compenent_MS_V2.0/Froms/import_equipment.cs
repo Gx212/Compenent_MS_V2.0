@@ -20,7 +20,7 @@ namespace Compenent_MS_V2._0.Froms
 
         private void button1_Click(object sender, EventArgs e)//导入按钮
         {
-            string import_sql = $"insert into equipment_data values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox5.Text}','{textBox4.Text}','{comboBox1.Text}')";
+            string import_sql = $"insert into equipment_data values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{comboBox1.Text}')";
             Dao dao = new Dao();
             if (dao.Execute(import_sql) > 0)
             {

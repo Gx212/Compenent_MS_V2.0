@@ -48,7 +48,7 @@ namespace Compenent_MS_V2._0.Uer_Control
         private void button1_Click(object sender, EventArgs e)//借用设备按钮
         {
             
-            string lend_sql = $"UPDATE equipment_data SET 状态 = '已借用' WHERE 仪器名 = '{label_u1.Text}'";
+            string lend_sql = $"UPDATE equipment_data SET 状态 = '已借用' WHERE 仪器名称 = '{label_u1.Text}'";
             Dao dao = new Dao();
             if (dao.Execute(lend_sql) > 0)
             {
@@ -65,7 +65,7 @@ namespace Compenent_MS_V2._0.Uer_Control
 
         private void button2_Click(object sender, EventArgs e)//归还元设备按钮
         {
-            string return_sql = $"UPDATE equipment_data SET 状态 = '未使用' WHERE 仪器名 = '{label_u1.Text}'";
+            string return_sql = $"UPDATE equipment_data SET 状态 = '未使用' WHERE 仪器名称 = '{label_u1.Text}'";
             Dao dao = new Dao();
             if (dao.Execute(return_sql) > 0)
             {

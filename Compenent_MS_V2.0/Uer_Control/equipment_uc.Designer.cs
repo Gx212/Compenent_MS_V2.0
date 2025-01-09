@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_u5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label_u4 = new System.Windows.Forms.Label();
+            this.label_u3 = new System.Windows.Forms.Label();
+            this.label_u2 = new System.Windows.Forms.Label();
+            this.label_u1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,20 +52,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label_u1 = new System.Windows.Forms.Label();
-            this.label_u2 = new System.Windows.Forms.Label();
-            this.label_u3 = new System.Windows.Forms.Label();
-            this.label_u4 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label_u5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -90,6 +90,67 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(714, 1440);
             this.panel1.TabIndex = 0;
+            // 
+            // label_u5
+            // 
+            this.label_u5.AutoSize = true;
+            this.label_u5.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_u5.Location = new System.Drawing.Point(161, 386);
+            this.label_u5.Name = "label_u5";
+            this.label_u5.Size = new System.Drawing.Size(78, 31);
+            this.label_u5.TabIndex = 32;
+            this.label_u5.Text = "(null)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("幼圆", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label4.Location = new System.Drawing.Point(65, 386);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 24);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "位置：";
+            // 
+            // label_u4
+            // 
+            this.label_u4.AutoSize = true;
+            this.label_u4.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_u4.Location = new System.Drawing.Point(161, 494);
+            this.label_u4.Name = "label_u4";
+            this.label_u4.Size = new System.Drawing.Size(78, 31);
+            this.label_u4.TabIndex = 30;
+            this.label_u4.Text = "(null)";
+            // 
+            // label_u3
+            // 
+            this.label_u3.AutoSize = true;
+            this.label_u3.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_u3.Location = new System.Drawing.Point(161, 292);
+            this.label_u3.Name = "label_u3";
+            this.label_u3.Size = new System.Drawing.Size(78, 31);
+            this.label_u3.TabIndex = 29;
+            this.label_u3.Text = "(null)";
+            // 
+            // label_u2
+            // 
+            this.label_u2.AutoSize = true;
+            this.label_u2.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_u2.Location = new System.Drawing.Point(217, 167);
+            this.label_u2.Name = "label_u2";
+            this.label_u2.Size = new System.Drawing.Size(78, 31);
+            this.label_u2.TabIndex = 28;
+            this.label_u2.Text = "(null)";
+            // 
+            // label_u1
+            // 
+            this.label_u1.AutoSize = true;
+            this.label_u1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_u1.Location = new System.Drawing.Point(228, 72);
+            this.label_u1.Name = "label_u1";
+            this.label_u1.Size = new System.Drawing.Size(78, 31);
+            this.label_u1.TabIndex = 27;
+            this.label_u1.Text = "(null)";
             // 
             // panel7
             // 
@@ -136,7 +197,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label3.Location = new System.Drawing.Point(65, 292);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 28);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 21;
             this.label3.Text = "状态：";
             // 
@@ -147,7 +208,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label2.Location = new System.Drawing.Point(65, 494);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 28);
+            this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 20;
             this.label2.Text = "说明：";
             // 
@@ -158,7 +219,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label1.Location = new System.Drawing.Point(65, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 28);
+            this.label1.Size = new System.Drawing.Size(135, 24);
             this.label1.TabIndex = 19;
             this.label1.Text = "仪器编号：";
             // 
@@ -169,7 +230,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label8.Location = new System.Drawing.Point(65, 72);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 28);
+            this.label8.Size = new System.Drawing.Size(135, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "仪器名称：";
             // 
@@ -274,71 +335,6 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // label_u1
-            // 
-            this.label_u1.AutoSize = true;
-            this.label_u1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_u1.Location = new System.Drawing.Point(228, 72);
-            this.label_u1.Name = "label_u1";
-            this.label_u1.Size = new System.Drawing.Size(91, 37);
-            this.label_u1.TabIndex = 27;
-            this.label_u1.Text = "(null)";
-            // 
-            // label_u2
-            // 
-            this.label_u2.AutoSize = true;
-            this.label_u2.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_u2.Location = new System.Drawing.Point(217, 167);
-            this.label_u2.Name = "label_u2";
-            this.label_u2.Size = new System.Drawing.Size(91, 37);
-            this.label_u2.TabIndex = 28;
-            this.label_u2.Text = "(null)";
-            // 
-            // label_u3
-            // 
-            this.label_u3.AutoSize = true;
-            this.label_u3.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_u3.Location = new System.Drawing.Point(161, 292);
-            this.label_u3.Name = "label_u3";
-            this.label_u3.Size = new System.Drawing.Size(91, 37);
-            this.label_u3.TabIndex = 29;
-            this.label_u3.Text = "(null)";
-            // 
-            // label_u4
-            // 
-            this.label_u4.AutoSize = true;
-            this.label_u4.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_u4.Location = new System.Drawing.Point(161, 494);
-            this.label_u4.Name = "label_u4";
-            this.label_u4.Size = new System.Drawing.Size(91, 37);
-            this.label_u4.TabIndex = 30;
-            this.label_u4.Text = "(null)";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(24, 23);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(2045, 1394);
-            this.panel8.TabIndex = 26;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 1297);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(2045, 97);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "添加设备";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "仪器名称";
@@ -381,30 +377,34 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
-            // label4
+            // panel8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("幼圆", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(65, 386);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "位置：";
+            this.panel8.Controls.Add(this.button3);
+            this.panel8.Controls.Add(this.dataGridView1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(24, 23);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(2045, 1394);
+            this.panel8.TabIndex = 26;
             // 
-            // label_u5
+            // button3
             // 
-            this.label_u5.AutoSize = true;
-            this.label_u5.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_u5.Location = new System.Drawing.Point(161, 386);
-            this.label_u5.Name = "label_u5";
-            this.label_u5.Size = new System.Drawing.Size(91, 37);
-            this.label_u5.TabIndex = 32;
-            this.label_u5.Text = "(null)";
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 1297);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(2045, 97);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "添加设备";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // equipment_uc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
