@@ -42,7 +42,7 @@ namespace Compenent_MS_V2._0.Froms
                 if (textBox2.Text == String_arry.compenent_arry[1])//型号未修改，执行更新操作
                 {
                     Dao dao = new Dao();
-                    String sql = $"update  component_data set 类型 = '{comboBox1.Text}',参数='{textBox3.Text}',封装='{textBox4.Text}',描述='{textBox5.Text}',链接='{textBox6.Text}',数量='{textBox7.Text}' where 名称 = '{textBox2.Text}'";
+                    String sql = $"update  component_data set 类型 = '{comboBox1.Text}',参数='{textBox3.Text}',封装='{textBox4.Text}',描述='{textBox5.Text}',链接='{textBox6.Text}',库存='{textBox7.Text}' where 型号 = '{textBox2.Text}'";
 
                     if (dao.Execute(sql) > 0)
                     {

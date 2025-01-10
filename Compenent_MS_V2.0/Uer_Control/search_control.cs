@@ -88,7 +88,7 @@ namespace Compenent_MS_V2._0.Uer_Control
 
                 dataGridView1.Rows.Clear();
                 Dao dao = new Dao();
-                string sql = $"select * from component_data where 名称 like '%{textBox1.Text}%'";
+                string sql = $"select * from component_data where 型号 like '%{textBox1.Text}%'";
                 IDataReader data = dao.read(sql);
                 while (data.Read())
                 {
@@ -103,7 +103,7 @@ namespace Compenent_MS_V2._0.Uer_Control
 
                 dataGridView1.Rows.Clear();
                 Dao dao = new Dao();
-                string sql = $"select * from component_data where 名称 like '%{textBox1.Text}%' and 类型 like '%{comboBox2.Text}%'";
+                string sql = $"select * from component_data where 型号 like '%{textBox1.Text}%' and 类型 like '%{comboBox2.Text}%'";
                 IDataReader data = dao.read(sql);
                 while (data.Read())
                 {
@@ -163,7 +163,7 @@ namespace Compenent_MS_V2._0.Uer_Control
             if (dr == DialogResult.OK)
             {
                 Dao dao = new Dao();
-                string sql = $"delete from component_data where 名称 = '{label13.Text}'";
+                string sql = $"delete from component_data where 型号 = '{label13.Text}'";
                 if (dao.Execute(sql) > 0)
                 {
                     MessageBox.Show($"成功删除{label13.Text}");

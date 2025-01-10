@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Dashboard));
             this.Time_Date = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.user_name = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.button_dashboard = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel_control = new System.Windows.Forms.Panel();
-            this.user_name = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -70,6 +70,28 @@
             this.panel1.Size = new System.Drawing.Size(2400, 116);
             this.panel1.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1815, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 30);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "欢迎你";
+            // 
+            // user_name
+            // 
+            this.user_name.AutoSize = true;
+            this.user_name.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name.ForeColor = System.Drawing.Color.White;
+            this.user_name.Location = new System.Drawing.Point(1906, 36);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(86, 30);
+            this.user_name.TabIndex = 11;
+            this.user_name.Text = "label3";
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
@@ -91,7 +113,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1815, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 34);
+            this.label2.Size = new System.Drawing.Size(86, 30);
             this.label2.TabIndex = 10;
             this.label2.Text = "label2";
             // 
@@ -116,7 +138,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(129, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 42);
+            this.label1.Size = new System.Drawing.Size(355, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "核电子学信息管理系统";
             // 
@@ -209,28 +231,6 @@
             this.panel_control.Name = "panel_control";
             this.panel_control.Size = new System.Drawing.Size(2277, 1234);
             this.panel_control.TabIndex = 3;
-            // 
-            // user_name
-            // 
-            this.user_name.AutoSize = true;
-            this.user_name.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_name.ForeColor = System.Drawing.Color.White;
-            this.user_name.Location = new System.Drawing.Point(2003, 36);
-            this.user_name.Name = "user_name";
-            this.user_name.Size = new System.Drawing.Size(99, 34);
-            this.user_name.TabIndex = 11;
-            this.user_name.Text = "label3";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1815, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 34);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "欢迎你";
             // 
             // Form_Dashboard
             // 

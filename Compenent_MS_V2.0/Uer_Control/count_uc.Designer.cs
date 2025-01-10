@@ -142,7 +142,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(726, 1194);
+            this.chart2.Size = new System.Drawing.Size(733, 1194);
             this.chart2.TabIndex = 13;
             this.chart2.Text = "chart2";
             // 

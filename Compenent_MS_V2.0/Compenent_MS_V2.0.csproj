@@ -166,6 +166,12 @@
     <Compile Include="Froms\Modify_Form.Designer.cs">
       <DependentUpon>Modify_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Froms\nuclideImport_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\nuclideImport_Form.Designer.cs">
+      <DependentUpon>nuclideImport_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Froms\Register_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,12 @@
     <Compile Include="Uer_Control\journal_uc.Designer.cs">
       <DependentUpon>journal_uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uer_Control\nuclide_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uer_Control\nuclide_uc.Designer.cs">
+      <DependentUpon>nuclide_uc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uer_Control\search_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,6 +234,9 @@
     <EmbeddedResource Include="Froms\Modify_Form.resx">
       <DependentUpon>Modify_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Froms\nuclideImport_Form.resx">
+      <DependentUpon>nuclideImport_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Froms\Register_Form.resx">
       <DependentUpon>Register_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uer_Control\journal_uc.resx">
       <DependentUpon>journal_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uer_Control\nuclide_uc.resx">
+      <DependentUpon>nuclide_uc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uer_Control\search_control.resx">
       <DependentUpon>search_control.cs</DependentUpon>

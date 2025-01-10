@@ -17,9 +17,7 @@ namespace Compenent_MS_V2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            //Application.Run(new Form_Dashboard());
-            //Application.Run(new import_Form());
+            Application.Run(new Form1());//登录界面为主入口
         }
     }
 }

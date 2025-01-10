@@ -45,9 +45,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(410, 254);
+            this.button3.Location = new System.Drawing.Point(364, 212);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(347, 187);
+            this.button3.Size = new System.Drawing.Size(308, 156);
             this.button3.TabIndex = 20;
             this.button3.Text = "元器件管理";
             this.button3.UseVisualStyleBackColor = false;
@@ -60,9 +61,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1519, 254);
+            this.button1.Location = new System.Drawing.Point(1350, 212);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(347, 187);
+            this.button1.Size = new System.Drawing.Size(308, 156);
             this.button1.TabIndex = 21;
             this.button1.Text = "实验器材管理";
             this.button1.UseVisualStyleBackColor = false;
@@ -75,40 +77,43 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(410, 774);
+            this.button2.Location = new System.Drawing.Point(364, 645);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(347, 187);
+            this.button2.Size = new System.Drawing.Size(308, 156);
             this.button2.TabIndex = 22;
             this.button2.Text = "核素信息管理";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1214);
+            this.panel2.Location = new System.Drawing.Point(0, 1011);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2257, 20);
+            this.panel2.Size = new System.Drawing.Size(2006, 17);
             this.panel2.TabIndex = 24;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(2257, 0);
+            this.panel4.Location = new System.Drawing.Point(2006, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(20, 1234);
+            this.panel4.Size = new System.Drawing.Size(18, 1028);
             this.panel4.TabIndex = 23;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 20);
+            this.panel3.Location = new System.Drawing.Point(0, 17);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(20, 1194);
+            this.panel3.Size = new System.Drawing.Size(18, 994);
             this.panel3.TabIndex = 26;
             // 
             // panel1
@@ -116,8 +121,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2257, 20);
+            this.panel1.Size = new System.Drawing.Size(2006, 17);
             this.panel1.TabIndex = 25;
             // 
             // button4
@@ -127,16 +133,17 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1519, 774);
+            this.button4.Location = new System.Drawing.Point(1350, 645);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(347, 187);
+            this.button4.Size = new System.Drawing.Size(308, 156);
             this.button4.TabIndex = 27;
-            this.button4.Text = "文档管理";
+            this.button4.Text = "更多功能开发中";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // Dashboard_uc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel3);
@@ -146,8 +153,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Dashboard_uc";
-            this.Size = new System.Drawing.Size(2277, 1234);
+            this.Size = new System.Drawing.Size(2024, 1028);
             this.ResumeLayout(false);
 
         }

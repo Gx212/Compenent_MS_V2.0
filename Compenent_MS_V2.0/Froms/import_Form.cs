@@ -88,10 +88,11 @@ namespace Compenent_MS_V2._0.Froms
 
         private void button3_Click(object sender, EventArgs e)//excel表格导入数据
         {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;//添加许可证
             try
             {
                 ExcelPackage package = new ExcelPackage(new FileInfo($"{textBox8.Text}"));
-                ExcelWorksheet worksheet = package.Workbook.Worksheets[1];//选取第一个工作表
+                ExcelWorksheet worksheet = package.Workbook.Worksheets[0];//选取第一个工作表
 
                 Dao dao = new Dao();
                 int exist_component = 0;
@@ -100,7 +101,7 @@ namespace Compenent_MS_V2._0.Froms
 
                for (int Row = 1; Row <= worksheet.Dimension.Rows; Row++)
                {
-                    string sql = $"SELECT COUNT(*) FROM component_data where 名称 = '{worksheet.Cells[Row,2].Value}'";
+                    string sql = $"SELECT COUNT(*) FROM component_data where 型号 = '{worksheet.Cells[Row,2].Value}'";
                     int count = dao.ExecuteScalar(sql);
 
                     if (count > 0)//存在相同型号的元器件，数量累加
@@ -112,7 +113,7 @@ namespace Compenent_MS_V2._0.Froms
                         int add_data;
                         Int32.TryParse(data[6].ToString(), out basic_data);
                         Int32.TryParse(worksheet.Cells[Row,7].Value.ToString(), out add_data);//将string转换成int类型数据进行运算
-                        string sql_insert = $"update component_data set 数量 = '{(basic_data + add_data).ToString()}' where 名称 = '{worksheet.Cells[Row,2].Value}'";
+                        string sql_insert = $"update component_data set 库存 = '{(basic_data + add_data).ToString()}' where 型号 = '{worksheet.Cells[Row,2].Value}'";
                         dao.Execute(sql_insert);
 
                         exist_component++;
@@ -120,7 +121,7 @@ namespace Compenent_MS_V2._0.Froms
                     }
                     else//不存在该型号的元器件，执行插入
                     {
-                        string sql_insert = $"insert into component_data values ('{worksheet.Cells[Row, 1].Value}','{worksheet.Cells[Row, 2].Value}','{worksheet.Cells[Row, 3].Value}','{worksheet.Cells[Row, 4].Value}','{worksheet.Cells[Row, 5].Value}','{worksheet.Cells[Row, 6].Value}',{worksheet.Cells[Row, 7].Value})";
+                        string sql_insert = $"insert into component_data values ('{worksheet.Cells[Row, 1].Value}','{worksheet.Cells[Row, 2].Value}','{worksheet.Cells[Row, 3].Value}','{worksheet.Cells[Row, 4].Value}','{worksheet.Cells[Row, 5].Value}','{worksheet.Cells[Row, 6].Value}','{worksheet.Cells[Row, 7].Value}')";
                         dao.Execute(sql_insert);
 
                         noexist_component++;

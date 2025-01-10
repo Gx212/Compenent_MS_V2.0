@@ -32,5 +32,13 @@ namespace Compenent_MS_V2._0.Uer_Control
             equipment_uc equipment_uc = new equipment_uc();
             Form_Dashboard.f_dashboard.turn_panel(equipment_uc);
         }
+
+        private void button2_Click(object sender, EventArgs e)//跳转核素信息页面
+        {
+            this.Dispose();
+            nuclide_uc nuc_uc = new nuclide_uc();
+            Form_Dashboard.f_dashboard.turn_panel(nuc_uc);
+
+        }
     }
 }
